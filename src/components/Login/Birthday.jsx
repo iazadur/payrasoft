@@ -9,7 +9,7 @@ const Birthday = ({ handleOnBlur }) => {
                     <b> Phone Number</b>
                 </Form.Label>
                 <Col sm={12}>
-                    <Form.Control onBlur={handleOnBlur} name="PhoneNumber" type="Number" placeholder="Phone Number" />
+                    <Form.Control onBlur={handleOnBlur} className="inputField" name="PhoneNumber" type="Number" placeholder="Phone Number" />
                 </Col>
             </Form.Group>
 
@@ -18,7 +18,7 @@ const Birthday = ({ handleOnBlur }) => {
                     <b>Date of Year</b>
                 </Form.Label>
                 <Col sm={12}>
-                    <Form.Control onBlur={handleOnBlur} name="DOY" type="number" placeholder="Date of Year" />
+                    <Form.Control onBlur={handleOnBlur} className="inputField" name="DOY" type="number" placeholder="Date of Year" />
                 </Col>
             </Form.Group>
         </div>

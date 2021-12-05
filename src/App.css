@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+
+.inputField{
+  border: none !important;
+  background-color: #e9ecef !important;
+  border-radius: 20px !important;
+  padding: 10px 20px !important;
+}

@@ -9,7 +9,7 @@ const Contact = ({ handleOnBlur }) => {
                 <b>Email</b>
                 </Form.Label>
                 <Col sm={12}>
-                    <Form.Control onBlur={handleOnBlur} name="email" type="email" placeholder="Email" />
+                    <Form.Control onBlur={handleOnBlur} className="inputField" name="email" type="email" placeholder="Email" />
                 </Col>
             </Form.Group>
 
@@ -18,7 +18,7 @@ const Contact = ({ handleOnBlur }) => {
                     <b>Password</b>
                 </Form.Label>
                 <Col sm={12}>
-                    <Form.Control onBlur={handleOnBlur} name="password" type="password" placeholder="Password" />
+                    <Form.Control onBlur={handleOnBlur} className="inputField" name="password" type="password" placeholder="Password" />
                 </Col>
             </Form.Group>
         </div>

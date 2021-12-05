@@ -10,7 +10,7 @@ const Name = ({ handleOnBlur }) => {
                     <b>First Name</b>
                 </Form.Label>
                 <Col sm={12}>
-                    <Form.Control onBlur={handleOnBlur} name="FirstName" type="text" placeholder="First Name" />
+                    <Form.Control onBlur={handleOnBlur} className="inputField" name="FirstName" type="text" placeholder="First Name" />
                 </Col>
             </Form.Group>
 
@@ -19,7 +19,7 @@ const Name = ({ handleOnBlur }) => {
                     <b>Last Name</b>
                 </Form.Label>
                 <Col sm={12}>
-                    <Form.Control onBlur={handleOnBlur} name="LastName" type="text" placeholder="Last Name" />
+                    <Form.Control onBlur={handleOnBlur} className="inputField" name="LastName" type="text" placeholder="Last Name" />
                 </Col>
             </Form.Group>
 
