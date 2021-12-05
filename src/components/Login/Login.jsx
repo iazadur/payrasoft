@@ -60,10 +60,10 @@ const Login = ({ user, setUser }) => {
 
                     <Col>
                         <div>
-                            {page > 1 && <Button variant="info" className="float-start px-4 py-2 fw-bold border-0" onClick={goPreviewsPage}>Previews</Button>}
+                            {page > 1 && <Button variant="info" className="float-start px-4 py-2 fw-bold border-0 shadow-lg" onClick={goPreviewsPage}>Previews</Button>}
                             <div>
-                                {page !== 3 && <Button variant="primary" style={{backgroundColor: '#3598DC'}}  className="float-end px-4 py-2 fw-bold border-0" onClick={goNextPage}>Next</Button>}
-                                {page === 3 && <Button variant="success" style={{backgroundColor: '#3598DC'}} className="float-end px-4 py-2 fw-bold border-0"  type="submit">Submit</Button>}
+                                {page !== 3 && <Button variant="primary" style={{backgroundColor: '#3598DC'}}  className="float-end px-4 py-2 fw-bold border-0 shadow-lg" onClick={goNextPage}>Next</Button>}
+                                {page === 3 && <Button variant="success" style={{backgroundColor: '#3598DC'}} className="float-end px-4 py-2 fw-bold border-0 shadow-lg"  type="submit">Submit</Button>}
                             </div>
                         </div>
                     </Col>
