@@ -34,19 +34,14 @@ const Login = () => {
         if (!data) {
             return
         }
-        let newUser = []
-        newUser.push(data)
-        localStorage.setItem('User', JSON.stringify(newUser));
+        setUser([...user, data])
         swal({
             title: "Good job!",
             text: "You Registration Successfully!",
             icon: "success",
             button: false,
-            timer:1500
+            timer: 1500
         });
-        const updateUser = localStorage.getItem('User')
-        setUser(JSON.parse(updateUser))
-
     }
     return (
         <>
@@ -83,18 +78,23 @@ const Login = () => {
             <br /><br /><br />
 
             {user && <div className="">
-                {
-                    user?.map(u =>
-                        <Card style={{ width: '18rem' }}>
-                            <Card.Header>{u.FirstName}</Card.Header>
-                            <ListGroup variant="flush">
-                                <ListGroup.Item>{u.email}</ListGroup.Item>
-                                <ListGroup.Item>{u.PhoneNumber}</ListGroup.Item>
-                                <ListGroup.Item>{u.DOY}</ListGroup.Item>
-                            </ListGroup>
-                        </Card>
-                    )
-                }
+                <Row xs={1} md={3} className="g-4">
+                    {
+                        user.map(u =>
+                            <Col>
+                                <Card>
+                                    <Card.Header>Your Profile</Card.Header>
+                                    <ListGroup variant="flush">
+                                        <ListGroup.Item>{u.FirstName}{" "}{u.LastName}</ListGroup.Item>
+                                        <ListGroup.Item>{u.PhoneNumber}</ListGroup.Item>
+                                        <ListGroup.Item>{u.email}</ListGroup.Item>
+                                        <ListGroup.Item>{u.DOY}</ListGroup.Item>
+                                    </ListGroup>
+                                </Card>
+                            </Col>
+                        )
+                    }
+                </Row>
             </div>}
         </>
     );
