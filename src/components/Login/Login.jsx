@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
-import { Form, Button, Card, ListGroup, Row, Col } from 'react-bootstrap'
+import { Form, Button, Row, Col } from 'react-bootstrap'
 import swal from 'sweetalert';
 import Birthday from './Birthday';
 import Contact from './Contact';
 import Name from './Name';
 
-const Login = () => {
+const Login = ({ user, setUser }) => {
     const [page, setPage] = useState(1)
     const [data, setData] = useState({})
-    const [user, setUser] = useState([])
+    const [,] = useState([])
 
     const goNextPage = () => {
         if (page === 3) {
@@ -45,11 +45,11 @@ const Login = () => {
     }
     return (
         <>
-            <h1>Register Page</h1>
+            <h1 className="text-center">Create Account</h1>
             <div>
-                <progress value={page} max="3"></progress>
+                <progress className="w-100 my-3" value={page} max="3" spellCheck></progress>
             </div>
-            <Form onSubmit={handleRegister} className="w-50 m-auto">
+            <Form onSubmit={handleRegister} className="w-100 m-auto">
                 {page === 1 && <Name handleOnBlur={handleOnBlur} />}
                 {page === 2 && <Contact handleOnBlur={handleOnBlur} />}
                 {page === 3 && <Birthday handleOnBlur={handleOnBlur} />}
@@ -62,9 +62,9 @@ const Login = () => {
                     </Col>
                     <Col sm={9}>
                         <div className="d-flex justify-content-between">
-                            <Button variant="warning" onClick={goPreviewsPage}>Previews</Button>
+                            {page > 1 && <Button variant="warning" onClick={goPreviewsPage}>Previews</Button>}
                             <div className="">
-                                {page !== 3 && <Button variant="primary" className="" onClick={goNextPage}>Next</Button>}
+                                {page !== 3 && <Button variant="primary" className="float-right" onClick={goNextPage}>Next</Button>}
                                 {page === 3 && <Button variant="success" type="submit">Submit</Button>}
                             </div>
                         </div>
@@ -77,25 +77,7 @@ const Login = () => {
             </Form>
             <br /><br /><br />
 
-            {user && <div className="">
-                <Row xs={1} md={3} className="g-4">
-                    {
-                        user.map(u =>
-                            <Col>
-                                <Card>
-                                    <Card.Header><b>Your Profile</b></Card.Header>
-                                    <ListGroup variant="flush">
-                                        <ListGroup.Item>{u.FirstName}{" "}{u.LastName}</ListGroup.Item>
-                                        <ListGroup.Item>{u.PhoneNumber}</ListGroup.Item>
-                                        <ListGroup.Item>{u.email}</ListGroup.Item>
-                                        <ListGroup.Item>{u.DOY}</ListGroup.Item>
-                                    </ListGroup>
-                                </Card>
-                            </Col>
-                        )
-                    }
-                </Row>
-            </div>}
+
         </>
     );
 };
