@@ -11,7 +11,7 @@ function App() {
   return (
     <div className=" container">
       <Navigation />
-      <Row xs={1} md={2} className="g-4 h-100 d-flex align-items-center">
+      <Row xs={1} md={2} className="g-4 h-100 d-flex align-items-center shadow-lg my-5 p-3 rounded-3">
         <Col >
         <img src={img} className="w-100" alt="logo" />
         </Col>

@@ -45,7 +45,7 @@ const Login = ({ user, setUser }) => {
     }
     return (
         <>
-            <h1 className="text-center">Create Account</h1>
+            <h1 className="text-center fw-bold text-primary">Create Account</h1>
             <div>
                 <progress className="w-100 my-3" value={page} max="3" spellCheck></progress>
             </div>
@@ -59,11 +59,11 @@ const Login = ({ user, setUser }) => {
                 <Row className="mb-3" >
 
                     <Col>
-                        <div className="d-inline-b">
-                            {page > 1 && <Button variant="warning" className="float-start" onClick={goPreviewsPage}>Previews</Button>}
-                            <div className="">
-                                {page !== 3 && <Button variant="primary" className="float-end" onClick={goNextPage}>Next</Button>}
-                                {page === 3 && <Button variant="success" className="float-end" type="submit">Submit</Button>}
+                        <div>
+                            {page > 1 && <Button variant="info" className="float-start px-4 py-2 fw-bold border-0" onClick={goPreviewsPage}>Previews</Button>}
+                            <div>
+                                {page !== 3 && <Button variant="primary" style={{backgroundColor: '#3598DC'}}  className="float-end px-4 py-2 fw-bold border-0" onClick={goNextPage}>Next</Button>}
+                                {page === 3 && <Button variant="success" style={{backgroundColor: '#3598DC'}} className="float-end px-4 py-2 fw-bold border-0"  type="submit">Submit</Button>}
                             </div>
                         </div>
                     </Col>
