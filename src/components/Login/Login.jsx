@@ -59,9 +59,9 @@ const Login = () => {
                 {page === 3 && <Birthday handleOnBlur={handleOnBlur} />}
 
                 <div className="d-flex justify-content-between">
-                    <Button variant="warning" onClick={goPreviewsPage}>previews</Button>
+                    <Button variant="warning" onClick={goPreviewsPage}>Previews</Button>
                     <div className="">
-                        {page !== 3 && <Button variant="primary" className="" onClick={goNextPage}>next</Button>}
+                        {page !== 3 && <Button variant="primary" className="" onClick={goNextPage}>Next</Button>}
                         {page === 3 && <Button variant="success" type="submit">Submit</Button>}
                     </div>
                 </div>
