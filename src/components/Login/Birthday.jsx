@@ -5,19 +5,19 @@ const Birthday = ({ handleOnBlur }) => {
     return (
         <div>
             <Form.Group as={Row} className="mb-3" >
-                <Form.Label column sm={2}>
+                <Form.Label column sm={3}>
                     Phone Number
                 </Form.Label>
-                <Col sm={10}>
+                <Col sm={9}>
                     <Form.Control onBlur={handleOnBlur} name="PhoneNumber" type="Number" placeholder="Phone Number" />
                 </Col>
             </Form.Group>
 
             <Form.Group as={Row} className="mb-3" >
-                <Form.Label column sm={2}>
+                <Form.Label column sm={3}>
                     Date of Year
                 </Form.Label>
-                <Col sm={10}>
+                <Col sm={9}>
                     <Form.Control onBlur={handleOnBlur} name="DOY" type="number" placeholder="Date of Year"/>
                 </Col>
             </Form.Group>
