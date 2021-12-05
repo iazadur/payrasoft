@@ -6,7 +6,7 @@ const Navigation = () => {
         <>
             <Navbar className={"shadow-sm p-3"}>
                 <Container >
-                    <Navbar.Brand href="/">PayraSoft</Navbar.Brand>
+                    <Navbar.Brand href="/" className="fw-bold text-uppercase fs-4">PayraSoft</Navbar.Brand>
                     <Navbar.Toggle />
                     <Navbar.Collapse className="justify-content-end">
                         <Navbar.Text>
