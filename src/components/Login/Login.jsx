@@ -57,10 +57,8 @@ const Login = ({ user, setUser }) => {
 
 
                 <Row className="mb-3" >
-                    <Col sm={3}>
-
-                    </Col>
-                    <Col sm={9}>
+                    
+                    <Col>
                         <div className="d-flex justify-content-between">
                             {page > 1 && <Button variant="warning" onClick={goPreviewsPage}>Previews</Button>}
                             <div className="">
