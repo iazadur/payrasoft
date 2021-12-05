@@ -6,7 +6,7 @@ const Contact = ({ handleOnBlur }) => {
         <div>
             <Form.Group as={Row} className="mb-3" controlId="formHorizontalEmail">
                 <Form.Label column sm={12}>
-                    Email
+                <b>Email</b>
                 </Form.Label>
                 <Col sm={12}>
                     <Form.Control onBlur={handleOnBlur} name="email" type="email" placeholder="Email" />
@@ -15,7 +15,7 @@ const Contact = ({ handleOnBlur }) => {
 
             <Form.Group as={Row} className="mb-3" controlId="formHorizontalPassword">
                 <Form.Label column sm={12}>
-                    Password
+                    <b>Password</b>
                 </Form.Label>
                 <Col sm={12}>
                     <Form.Control onBlur={handleOnBlur} name="password" type="password" placeholder="Password" />

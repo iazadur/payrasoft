@@ -6,7 +6,7 @@ const Birthday = ({ handleOnBlur }) => {
         <div>
             <Form.Group as={Row} className="mb-3" >
                 <Form.Label column sm={12}>
-                    Phone Number
+                    <b> Phone Number</b>
                 </Form.Label>
                 <Col sm={12}>
                     <Form.Control onBlur={handleOnBlur} name="PhoneNumber" type="Number" placeholder="Phone Number" />
@@ -15,10 +15,10 @@ const Birthday = ({ handleOnBlur }) => {
 
             <Form.Group as={Row} className="mb-3" >
                 <Form.Label column sm={12}>
-                    Date of Year
+                    <b>Date of Year</b>
                 </Form.Label>
                 <Col sm={12}>
-                    <Form.Control onBlur={handleOnBlur} name="DOY" type="number" placeholder="Date of Year"/>
+                    <Form.Control onBlur={handleOnBlur} name="DOY" type="number" placeholder="Date of Year" />
                 </Col>
             </Form.Group>
         </div>

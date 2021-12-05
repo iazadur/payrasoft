@@ -7,7 +7,7 @@ const Name = ({ handleOnBlur }) => {
 
             <Form.Group as={Row} className="mb-3" >
                 <Form.Label column sm={12}>
-                    First Name
+                    <b>First Name</b>
                 </Form.Label>
                 <Col sm={12}>
                     <Form.Control onBlur={handleOnBlur} name="FirstName" type="text" placeholder="First Name" />
@@ -16,7 +16,7 @@ const Name = ({ handleOnBlur }) => {
 
             <Form.Group as={Row} className="mb-3" >
                 <Form.Label column sm={12}>
-                    Last Name
+                    <b>Last Name</b>
                 </Form.Label>
                 <Col sm={12}>
                     <Form.Control onBlur={handleOnBlur} name="LastName" type="text" placeholder="Last Name" />
