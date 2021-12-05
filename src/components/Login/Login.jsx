@@ -57,13 +57,13 @@ const Login = ({ user, setUser }) => {
 
 
                 <Row className="mb-3" >
-                    
+
                     <Col>
-                        <div className="d-flex justify-content-between">
-                            {page > 1 && <Button variant="warning" onClick={goPreviewsPage}>Previews</Button>}
+                        <div className="d-inline-b">
+                            {page > 1 && <Button variant="warning" className="float-start" onClick={goPreviewsPage}>Previews</Button>}
                             <div className="">
-                                {page !== 3 && <Button variant="primary" className="float-right" onClick={goNextPage}>Next</Button>}
-                                {page === 3 && <Button variant="success" type="submit">Submit</Button>}
+                                {page !== 3 && <Button variant="primary" className="float-end" onClick={goNextPage}>Next</Button>}
+                                {page === 3 && <Button variant="success" className="float-end" type="submit">Submit</Button>}
                             </div>
                         </div>
                     </Col>
