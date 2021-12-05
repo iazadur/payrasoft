@@ -83,7 +83,7 @@ const Login = () => {
                         user.map(u =>
                             <Col>
                                 <Card>
-                                    <Card.Header>Your Profile</Card.Header>
+                                    <Card.Header><b>Your Profile</b></Card.Header>
                                     <ListGroup variant="flush">
                                         <ListGroup.Item>{u.FirstName}{" "}{u.LastName}</ListGroup.Item>
                                         <ListGroup.Item>{u.PhoneNumber}</ListGroup.Item>
