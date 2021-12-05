@@ -42,6 +42,7 @@ const Login = () => {
             text: "You Registration Successfully!",
             icon: "success",
             button: false,
+            timer:1500
         });
         const updateUser = localStorage.getItem('User')
         setUser(JSON.parse(updateUser))
