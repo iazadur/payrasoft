@@ -4,8 +4,8 @@ import { Container, Navbar } from 'react-bootstrap';
 const Navigation = () => {
     return (
         <>
-            <Navbar>
-                <Container>
+            <Navbar className={"shadow-sm p-3"}>
+                <Container >
                     <Navbar.Brand href="/">PayraSoft</Navbar.Brand>
                     <Navbar.Toggle />
                     <Navbar.Collapse className="justify-content-end">
